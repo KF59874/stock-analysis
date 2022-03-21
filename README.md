@@ -13,9 +13,9 @@ The data was refactored to make the code of the initial analysis more efficient.
 
 ### Improvements to the Code 
 #### Additional Index - *tickerIndex*
-The *tickerIndex* was introduced to make the code more efficient by eliminating using a further variable, such as *i* which was used during the initial run. 
+The *tickerIndex* was introduced to make the code more efficient by eliminating using a further variable, such as *j* which was used during the initial run. 
 
-This index was continuously used as an index to access the stock ticker for the introduced arrays:
+*tickerIndex* was continuously used as an index to access the stock ticker for the introduced arrays:
 - *tickers*
 - *tickerVolumes*
 - *tickerStartingPrices*
@@ -27,7 +27,7 @@ Using *tickerIndex* as an introduced index for these arrays, helped loop the inf
 Setting *i=0 to __RowCount__* had already been done in the first analysis. However doing this attribute, will make the code more efficient. 
 
 #### *TickerVolumes* set to *Long*
-The data type of *TickerVolumes* was set to *Long* to aid the data analysis in case of the raw data was too large to hold.
+The data type of *TickerVolumes* was set to *Long* to aid the data analysis in case the raw data was too large to hold.
 
 ### Results 
 Utilizing these improvements, enhaced the code, by making it more efficient and easier to read. 
@@ -50,12 +50,16 @@ By far the biggest advantage of refactoring code is being able to save time when
 
 The code also becomes easier to read and understand. This makes things escpecially simple when multiple people have access to the code. 
 
+*For* loops are also able to be defined for each single next step of the code, rather than defining mulitple nested loops. 
+
 #### Disadvantages
-A disadvantage of refactoring code is that it can be time consuming to enahnce it. It will also take a longer period of time to find and fix mistakes. 
+A disadvantage of refactoring code is that it can be time consuming to enhance it. It will also take a longer period of time to find and fix mistakes. 
 
 ### How these Advantages and Disadvantages apply to the original VBA script
 One of the disadvantages that I found while working on refactoring the code, is that each index, specifically *trickerIndex*, had to be correctly defined in order for the code to run. With having refactored code, it was much more difficult in my opinion to find where the bug is and how to fix it so that the system would understand it. This caused a far higher time commitment to writing code than with the non-refractored script. 
 
-There is also more room for spelling errors when using a newly introduced index, *trickerIndex*, when using it to access the stock ticker index for: *tickerVolumes*, *tickerStartingPrices*, and *tickerEndingPrices*.
+There is also more room for spelling errors when using a longer word for an index. In this case *trickerIndex* was used to access the stock ticker index for: *tickers*, *tickerVolumes*, *tickerStartingPrices*, and *tickerEndingPrices*.
 
-Using simple indexes such as *i* or *j* was for myself simpler to understand. 
+Using one letter indexes such as *i* or *j* was in my opinion simpler and less time consuming. 
+
+The advantages include that by being able to refactor the code, it is easier to not repeat code which was previously used. It also saved a significant amount of time when the script was run. 
