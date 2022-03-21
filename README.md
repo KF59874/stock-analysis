@@ -40,3 +40,21 @@ The code run for data set for 2017 stocks took 0.125 seconds as opposed to 0.851
 The code run for the 2018 data set also took 0.125 seconds as opposed to 0.8470001 seconds when using the not refractored code. 
 
 ![Time stamp refactored 2018 data](Resources/VBA_Challenge_2018.PNG)
+
+## 3. Summary 
+
+### Advantages and Disadvantages of Refactoring Code
+#### Advantages
+By far the biggest advantage of refactoring code is being able to save time when the code is run. This is especially important whent the data set that is being used, is extremely large. It saves time and runs more efficiently. 
+
+The code also becomes easier to read and understand. This makes things escpecially simple when multiple people have access to the code. 
+
+#### Disadvantages
+A disadvantage of refactoring code is that it can be time consuming to enahnce it. It will also take a longer period of time to find and fix mistakes. 
+
+### How these Advantages and Disadvantages apply to the original VBA script
+One of the disadvantages that I found while working on refactoring the code, is that each index, specifically *trickerIndex*, had to be correctly defined in order for the code to run. With having refactored code, it was much more difficult in my opinion to find where the bug is and how to fix it so that the system would understand it. This caused a far higher time commitment to writing code than with the non-refractored script. 
+
+There is also more room for spelling errors when using a newly introduced index, *trickerIndex*, when using it to access the stock ticker index for: *tickerVolumes*, *tickerStartingPrices*, and *tickerEndingPrices*.
+
+Using simple indexes such as *i* or *j* was for myself simpler to understand. 
