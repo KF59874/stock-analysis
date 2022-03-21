@@ -32,7 +32,13 @@ The data type of *TickerVolumes* was set to *Long* to aid the data analysis in c
 Utilizing these improvements, enhaced the code, by making it more efficient and easier to read. 
 
 #### Analysis for 2017
-The code run for data set for 2017 stocks took 0.125 seconds as opposed to 0.8515625 seconds when using the not refactored code. 
+The code run for data set for 2017 stocks took 0.125 seconds as opposed to 0.8515625 seconds when using the not refactored code.
+
+![Time stamp not refactored 2017 data](Resources/green_stocks 2017.PNG)
+![Time stamp refactored 2017 data]
 
 #### Analysis for 2018 
 The code run for the 2018 data set also took 0.125 seconds as opposed to 0.8470001 seconds when using the not refractored code. 
+
+![Time stamp not refactored 2018 data]
+![Time stamp refactored 2018 data]
