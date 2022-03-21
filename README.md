@@ -56,10 +56,12 @@ The code also becomes easier to read and understand. This makes things escpecial
 A disadvantage of refactoring code is that it can be time consuming to enhance it. It will also take a longer period of time to find and fix mistakes. 
 
 ### How these Advantages and Disadvantages apply to the original VBA script
+#### Advantages
+The advantages include that by being able to refactor the code, it is easier to not repeat code which was previously used. It also saved a significant amount of time when the script was run.
+
+#### Disadvantages
 One of the disadvantages that I found while working on refactoring the code, is that each index, specifically *trickerIndex*, had to be correctly defined in order for the code to run. With having refactored code, it was much more difficult in my opinion to find where the bug is and how to fix it so that the system would understand it. This caused a far higher time commitment to writing code than with the non-refractored script. 
 
 There is also more room for spelling errors when using a longer word for an index. In this case *trickerIndex* was used to access the stock ticker index for: *tickers*, *tickerVolumes*, *tickerStartingPrices*, and *tickerEndingPrices*.
 
 Using one letter indexes such as *i* or *j* was in my opinion simpler and less time consuming. 
-
-The advantages include that by being able to refactor the code, it is easier to not repeat code which was previously used. It also saved a significant amount of time when the script was run. 
