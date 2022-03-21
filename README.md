@@ -12,7 +12,7 @@ The data was refactored to make the code of the initial analysis more efficient.
 ## 2. Results
 
 ### Improvements to the Code 
-#### Additional Index - tickerIndex
+#### Additional Index - *tickerIndex*
 The *tickerIndex* was introduced to make the code more efficient by eliminating using a further variable, such as *i* which was used during the initial run. 
 
 This index was continuously used as an index to access the stock ticker for the introduced arrays:
